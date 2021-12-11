@@ -1,8 +1,10 @@
 - [X] Query: Create 3 new dojos
+
 INSERT INTO dojos (name, created_at, updated_at)
 VALUES("Brandon's Dojo", NOW(), NOW()), ("Jacie's Dojo", NOW(), NOW()), ("Natalie's Dojo", NOW(), NOW());
 
 - [X] Query: Delete the 3 dojos you just created
+
 DELETE FROM dojos WHERE id IN (1, 2, 3);
 
 - [X] Query: Create 3 more dojos
