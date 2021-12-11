@@ -1,0 +1,31 @@
+INSERT INTO users (first_name, last_name, email, created_at, updated_at) 
+VALUES('Brandon', 'Schumacher', 'schumacherb09@gmail.com', NOW(), NOW());
+
+INSERT INTO users (first_name, last_name, email, created_at, updated_at) 
+VALUES('Jacie', 'Schumacher', 'jacieschu@gmail.com', NOW(), NOW());
+
+INSERT INTO users (first_name, last_name, email, created_at, updated_at) 
+VALUES('Natalie', 'Schumacher', 'natalieschu@gmail.com', NOW(), NOW());
+
+SELECT * FROM users
+
+SELECT * FROM users
+WHERE email = 'schumacherb09@gmail.com';
+
+SELECT * FROM users
+WHERE id = 3;
+
+UPDATE users_schema.users SET last_name = 'Pancakes' WHERE id = 3;
+
+SELECT * FROM users
+
+DELETE FROM users WHERE id = 2;
+
+SELECT * FROM users
+
+SELECT * FROM users
+ORDER BY first_name ASC;
+
+SELECT * FROM users
+ORDER BY first_name DESC;
+
