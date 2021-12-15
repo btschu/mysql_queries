@@ -1,6 +1,6 @@
 ### Query: Create 5 different authors: Jane Austen, Emily Dickinson, Fyodor Dostoevsky, William Shakespeare, Lau Tzu
-INSERT INTO authors (first_name, last_name, created_at, updated_at)
-VALUES("Jane", "Austen", NOW(), NOW()), ("Emily", "Dickinson", NOW(), NOW()), ("Fyodor", "Dostoevsky", NOW(), NOW()), ("William", "Shakespeare", NOW(), NOW()), ("Lau", "Tzu", NOW(), NOW());
+```INSERT INTO authors (first_name, last_name, created_at, updated_at)
+VALUES("Jane", "Austen", NOW(), NOW()), ("Emily", "Dickinson", NOW(), NOW()), ("Fyodor", "Dostoevsky", NOW(), NOW()), ("William", "Shakespeare", NOW(), NOW()), ("Lau", "Tzu", NOW(), NOW());```
 
 ### Query: Create 5 books with the following names: C Sharp, Java, Python, PHP, Ruby
 INSERT INTO books (title, num_of_pages, created_at, updated_at)
