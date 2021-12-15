@@ -42,15 +42,25 @@
     VALUES (5,2);
 
 # Query: Find all the books that the 2nd author favorited
-
+    SELECT * FROM books
+    JOIN favorites ON books.id = favorites.book_id
+    JOIN authors ON authors.id = favorites.author_id
+    WHERE books.id = 2;
 
 # Query: Find all the authors that favorited to the 5th book
-
+    SELECT * FROM authors
+    JOIN favorites ON authors.id = favorites.author_id
+    JOIN books ON books.id = favorites.book_id
+    WHERE authors.id = 5;
 
 # Query: Find all the authors that favorited to the 2nd book
-
+    SELECT * FROM authors
+    JOIN favorites ON authors.id = favorites.author_id
+    JOIN books ON books.id = favorites.book_id
+    WHERE authors.id = 2;
 
 # Query: Display all the book titles that the 2nd author favorited
-
-
-# Query: Display all the book titles that the 2nd author favorited (Hint: Don't SELECT *)
+    SELECT * FROM books
+    JOIN favorites ON books.id = favorites.book_id
+    JOIN authors ON authors.id = favorites.author_id
+    WHERE books.id = 2;
