@@ -2,6 +2,7 @@
 ```
 SELECT MONTHNAME(charged_datetime) AS month, SUM(amount) AS revenue FROM billing
 WHERE MONTH(charged_datetime) = '03' AND YEAR(charged_datetime) = "2012"
+GROUP BY MONTHNAME(charged_datetime);
 ```
 
 2. What query would you run to get total revenue collected from the client with an id of 2?
